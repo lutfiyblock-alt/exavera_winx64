@@ -16,7 +16,7 @@ Repositori distribusi resmi aplikasi **Exavera CBT** untuk perangkat **Windows 1
 
 - **Sistem Operasi:** Windows 10 (versi 1903 atau lebih baru) / Windows 11 (arsitektur `x86_64`).
 - **Perangkat Keras:** Laptop Windows dengan adaptor Bluetooth bawaan aktif (wajib menyala sebelum masuk sesi ujian).
-- **Runtime Sistem:** Microsoft Visual C++ Redistributable 2015–2022 (`x64`) apabila belum terpasang di Windows.
+- **Runtime Sistem:** DLL Microsoft Visual C++ Runtime (`vcruntime140.dll`, `vcruntime140_1.dll`, `msvcp140.dll`) sudah dibundel di dalam arsip rilis sehingga langsung berjalan di Windows 10/11 bersih tanpa instalasi terpisah.
 
 ---
 
@@ -25,7 +25,7 @@ Repositori distribusi resmi aplikasi **Exavera CBT** untuk perangkat **Windows 1
 1. Unduh **`Exavera-CBT-Windows-Universal.zip`** dari halaman rilis terbaru.
 2. Klik kanan file `.zip` $\to$ **Extract All...** ke folder permanen di komputer, misalnya `C:\ExaveraCBT\`.
    *(Jangan menjalankan aplikasi langsung dari dalam arsip ZIP karena seluruh berkas `.dll` dan `data/` harus berada di direktori yang sama).*
-3. Buka folder hasil ekstrak lalu jalankan **`exam_app.exe`**.
+3. Buka folder hasil ekstrak lalu jalankan **`Exavera-CBT.exe`**.
 4. Jika muncul peringatan *Windows protected your PC* (Microsoft Defender SmartScreen), klik **More info** $\to$ **Run anyway**.
 
 ---
